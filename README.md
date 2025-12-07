@@ -3,13 +3,16 @@ Deloitte Data Analytics Job Simulation — completed through Forage. This reposi
 deloitte-data-analytics-simulation/
 │
 ├── Task1-Telemetry-Downtime/
-│   ├── dashboard_screenshot.png
+│   ├── dashboard_screenshot.pdf
 │   ├── README_Task1.md
-│   └── (optional) telemetry_data.json
 │
 ├── Task2-Gender-Equality-Analysis/
 │   ├── Equality_Table_Completed.xlsx
-│   ├── screenshot_table.png
-│   └── README_Task2.md
-│
-└── README.md   ← main overview of both tasks
+│   ├── Objective: Classify Equality Scores into Fair, Unfair, or Highly Discriminative
+        Files: Equality_Table_Completed.xlsx
+        Formula Used: =IF(ABS(C2) <= 10, "Fair", IF(ABS(C2) <= 20, "Unfair", "Highly Discriminative"))
+        Explanation (short): Uses ABS to treat negative and positive scores equally.
+        Fair: ±10
+        Unfair: 11–20
+        Highly Discriminative: >20
+        Outcome: Automatically classifies each job role based on its Equality Score.
